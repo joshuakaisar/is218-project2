@@ -38,7 +38,7 @@ def test_request_page3(client):
     """This makes the index page"""
     response = client.get("/page3")
     assert response.status_code == 200
-    assert b"Page 3" in response.data
+    assert b"Flask is a micro web framework written in Python. While Python is it's own standalone language. Its design philosophy emphasizes code readability with the use of significant indentation. It's what helps us automate processes in our code." in response.data
 
 def test_request_page4(client):
     """This makes the index page"""
