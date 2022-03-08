@@ -44,7 +44,7 @@ def test_request_page4(client):
     """This makes the index page"""
     response = client.get("/page4")
     assert response.status_code == 200
-    assert b"Page 4" in response.data
+    assert b"CI/CD(Continuous Integration and Continuous Deployment) are what allow us to keep the website or application running while also being stable. There are a series of checks before the application is deployed, making sure it's always stable." in response.data
 
 def test_request_page_not_found(client):
     """This makes the index page"""
