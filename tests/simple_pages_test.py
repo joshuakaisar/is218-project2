@@ -32,7 +32,7 @@ def test_request_page2(client):
     """This makes the index page"""
     response = client.get("/page2")
     assert response.status_code == 200
-    assert b"Page 2" in response.data
+    assert b"Docker is an open platform for developing, and running applications. It can be compared to having a sterile environment for your code to run in. Commands such as docker run allows us to run a program in a docker container. Docker ps is what allows us to see what is currently running." in response.data
 
 def test_request_page3(client):
     """This makes the index page"""
