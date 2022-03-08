@@ -26,7 +26,7 @@ def test_request_page1(client):
     """This makes the index page"""
     response = client.get("/page1")
     assert response.status_code == 200
-    assert b"Test" in response.data
+    assert b"GIT is a version control system. Git branches are different workspaces where we can work on our code without changing the main branch with the working code" in response.data
 
 def test_request_page2(client):
     """This makes the index page"""
