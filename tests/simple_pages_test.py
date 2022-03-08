@@ -26,8 +26,7 @@ def test_request_page1(client):
     """This makes the index page"""
     response = client.get("/page1")
     assert response.status_code == 200
-    assert b"GIT is a version control system. Git branches are different workspaces where we can work on our code without changing the main branch with the working code" \
-           b"Commits are like saves to our work in the VCS." in response.data
+    assert b"GIT is a version control system. Git branches are different workspaces where we can work on our code without changing the main branch with the working code. Commits are like saves to our work in the VCS. Repo's are where we can see the different branches with their commits. Finally, merges are when a feature is complete outside of the default branch and they are combined." in response.data
 
 def test_request_page2(client):
     """This makes the index page"""
