@@ -56,7 +56,7 @@ def test_request_page6(client):
     """This makes the index page"""
     response = client.get("/page6")
     assert response.status_code == 200
-    assert b"CI/CD(Continuous Integration and Continuous Deployment) are what allow us to keep the website or application running while also being stable. There are a series of checks before the application is deployed, making sure it's always stable." in response.data
+    assert b"AAA screening can find large bulges that might rupture if they are not repaired. Screening can also find smaller bulges that can be watched carefully over the years." in response.data
 
 def test_request_page7(client):
     """This makes the index page"""
