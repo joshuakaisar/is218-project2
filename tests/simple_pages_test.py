@@ -62,7 +62,7 @@ def test_request_page7(client):
     """This makes the index page"""
     response = client.get("/page7")
     assert response.status_code == 200
-    assert b"CI/CD(Continuous Integration and Continuous Deployment) are what allow us to keep the website or application running while also being stable. There are a series of checks before the application is deployed, making sure it's always stable." in response.data
+    assert b"The calculator program many OOP principals such as Encapsulation, Inheritance, Polymorphism, and Abstraction. Encapsulation describes the idea of wrapping data and the methods(such as addition and multiplication) that work on data within one unit. Inheritance allows us to define a class that inherits all the methods and properties from another class, such as using different math methods like addition and subtraction. Polymorphism allows the user of the calculator program to use simple calls such as add, or divide followed by numbers to calculate. Abstraction in Python is the process of hiding the real implementation of an application from the user and emphasizing only on how to use the application, which helps us hide data that would be irrelevant to the user. " in response.data
 
 def test_request_page8(client):
     """This makes the index page"""
