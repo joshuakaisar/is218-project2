@@ -54,5 +54,5 @@ def test_request_page5(client):
 
 def test_request_page_not_found(client):
     """This makes the index page"""
-    response = client.get("/page5")
+    response = client.get("/page6")
     assert response.status_code == 404
