@@ -52,7 +52,25 @@ def test_request_page5(client):
     assert response.status_code == 200
     assert b"CI/CD(Continuous Integration and Continuous Deployment) are what allow us to keep the website or application running while also being stable. There are a series of checks before the application is deployed, making sure it's always stable." in response.data
 
-def test_request_page_not_found(client):
+def test_request_page6(client):
     """This makes the index page"""
     response = client.get("/page6")
+    assert response.status_code == 200
+    assert b"CI/CD(Continuous Integration and Continuous Deployment) are what allow us to keep the website or application running while also being stable. There are a series of checks before the application is deployed, making sure it's always stable." in response.data
+
+def test_request_page7(client):
+    """This makes the index page"""
+    response = client.get("/page7")
+    assert response.status_code == 200
+    assert b"CI/CD(Continuous Integration and Continuous Deployment) are what allow us to keep the website or application running while also being stable. There are a series of checks before the application is deployed, making sure it's always stable." in response.data
+
+def test_request_page8(client):
+    """This makes the index page"""
+    response = client.get("/page8")
+    assert response.status_code == 200
+    assert b"CI/CD(Continuous Integration and Continuous Deployment) are what allow us to keep the website or application running while also being stable. There are a series of checks before the application is deployed, making sure it's always stable." in response.data
+
+def test_request_page_not_found(client):
+    """This makes the index page"""
+    response = client.get("/page9")
     assert response.status_code == 404
